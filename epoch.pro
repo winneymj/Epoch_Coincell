@@ -1,4 +1,4 @@
-update=3/4/2017 8:16:27 PM
+update=4/16/2017 6:59:09 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,14 +20,11 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[cvpcb]
-version=1
-NetIExt=net
 [general]
 version=1
 [eeschema]
 version=1
-LibDir=../../KiCad;../kicad-schlib-master/library
+LibDir=../../KiCad;../kicad-schlib-master/library;../kicad-library-master
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,3 +58,7 @@ LibName29=Atmel
 LibName30=switches
 LibName31=kicad-schlib-master/library/NXP
 LibName32=marks
+LibName33=kicad-library-master/library/maxim
+[cvpcb]
+version=1
+NetIExt=net
