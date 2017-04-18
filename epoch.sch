@@ -327,30 +327,19 @@ Connection ~ 9150 5400
 Text GLabel 9800 5600 2    60   Input ~ 0
 RESET
 $Comp
-L USB_OTG P1
-U 1 1 58B3A824
-P 1750 1350
-F 0 "P1" H 1900 950 50  0000 C CNN
-F 1 "USB_OTG" H 1750 1700 50  0000 C CNN
-F 2 "Connectors_Molex:USB_Micro-B_Molex_47346-0001" V 1700 1250 50  0001 C CNN
-F 3 "" V 1700 1250 50  0000 C CNN
-	1    1750 1350
-	1    0    0    1   
-$EndComp
-$Comp
 L (GND) #PWR010
 U 1 1 58B3A991
-P 1450 1850
-F 0 "#PWR010" H 1450 1850 30  0001 C CNN
-F 1 "(GND)" H 1450 1850 30  0001 C CNN
-F 2 "" H 1450 1850 60  0000 C CNN
-F 3 "" H 1450 1850 60  0000 C CNN
-	1    1450 1850
+P 1600 2000
+F 0 "#PWR010" H 1600 2000 30  0001 C CNN
+F 1 "(GND)" H 1600 2000 30  0001 C CNN
+F 2 "" H 1600 2000 60  0000 C CNN
+F 3 "" H 1600 2000 60  0000 C CNN
+	1    1600 2000
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2050 1250 2    60   BiDi ~ 0
+Text GLabel 2000 1500 2    60   BiDi ~ 0
 USB_D-
-Text GLabel 2050 1350 2    60   BiDi ~ 0
+Text GLabel 2000 1400 2    60   BiDi ~ 0
 USB_D+
 $Comp
 L AP131-33 U1
@@ -363,8 +352,6 @@ F 3 "" H 3350 1250 50  0000 C CNN
 	1    3350 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2800 1250 3050 1250
 $Comp
 L (GND) #PWR011
 U 1 1 58B44D3A
@@ -440,8 +427,6 @@ Wire Wire Line
 	4350 1450 4350 1400
 Wire Wire Line
 	4350 1150 4350 1200
-Text Notes 1550 850  0    60   ~ 0
-USB
 Text Notes 3050 850  0    60   ~ 0
 3.3V Regulator
 $Comp
@@ -746,21 +731,10 @@ Wire Wire Line
 Wire Wire Line
 	8500 2150 8500 2600
 Wire Wire Line
-	1650 950  1650 900 
-Wire Wire Line
-	1450 900  1750 900 
-Wire Wire Line
-	1450 900  1450 1850
-Wire Wire Line
-	1750 900  1750 950 
-Connection ~ 1650 900 
-Wire Wire Line
-	2800 1550 2050 1550
-Wire Wire Line
-	2800 1150 2800 1550
+	2800 1150 2800 1250
 Wire Wire Line
 	2800 1150 3050 1150
-Connection ~ 2800 1250
+Connection ~ 2800 1200
 $Comp
 L SW_Push SW2
 U 1 1 58E7A150
@@ -805,9 +779,9 @@ EXTMODE
 Text GLabel 3750 4800 2    60   Input ~ 0
 SDA
 Wire Wire Line
-	6600 1850 6400 1850
+	6400 1850 6600 1850
 Wire Wire Line
-	6600 1950 6000 1950
+	6000 1950 6600 1950
 $Comp
 L R R3
 U 1 1 58E7CAB8
@@ -845,7 +819,7 @@ Wire Wire Line
 	6050 1950 6050 1800
 Connection ~ 6050 1950
 Wire Wire Line
-	6050 1500 6050 1350
+	6050 1350 6050 1500
 Wire Wire Line
 	6500 1850 6500 1800
 Connection ~ 6500 1850
@@ -902,4 +876,26 @@ Text GLabel 3750 4700 2    60   Input ~ 0
 BUT_DWN
 Text GLabel 3750 4600 2    60   Input ~ 0
 BUT_UP
+$Comp
+L USB_OTG J1
+U 1 1 58F5A24A
+P 1700 1400
+F 0 "J1" H 1500 1850 50  0000 L CNN
+F 1 "USB_OTG" H 1500 1750 50  0000 L CNN
+F 2 "Connectors:USB-MICROB_LARGEPAD" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1250 3050 1250
+Wire Wire Line
+	1600 1800 1600 2000
+Wire Wire Line
+	1700 1800 1700 1900
+Wire Wire Line
+	1700 1900 1600 1900
+Connection ~ 1600 1900
+Wire Wire Line
+	2000 1200 2800 1200
 $EndSCHEMATC
