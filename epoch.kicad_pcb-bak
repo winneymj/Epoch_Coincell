@@ -664,7 +664,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm (layer F.Cu) (tedit 5862ED59) (tstamp 5904E285)
-    (at 103.378 79.883)
+    (at 144.483333 54.292)
     (descr "Through hole straight pin header, 1x05, 1.27mm pitch, single row")
     (tags "Through hole pin header THT 1x05 1.27mm single row")
     (path /58FD226D)
