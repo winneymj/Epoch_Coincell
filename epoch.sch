@@ -1068,6 +1068,6 @@ Wire Wire Line
 	5550 1850 5550 2100
 Wire Wire Line
 	5550 2400 5550 2600
-Text GLabel 3750 5600 2    60   Input ~ 0
+Text GLabel 3750 4500 2    60   Input ~ 0
 INTC
 $EndSCHEMATC
