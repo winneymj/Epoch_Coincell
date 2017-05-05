@@ -1,4 +1,4 @@
-update=5/1/2017 6:45:49 PM
+update=5/4/2017 7:56:59 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,9 +59,6 @@ LibName30=switches
 LibName31=kicad-schlib-master/library/NXP
 LibName32=marks
 LibName33=kicad-library-master/library/maxim
-[cvpcb]
-version=1
-NetIExt=net
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -72,3 +69,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[cvpcb]
+version=1
+NetIExt=net
